@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.enterprise.payrollsystem.CreatePayrollController">
+  <padding>
+    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+  </padding>
+  <children>
+    <Label text="Create Payroll"/>
+    <TextField fx:id="payrollIdField" promptText="Payroll ID"/>
+    <ComboBox fx:id="employeeComboBox" promptText="Select Employee"/>
+    <TextField fx:id="grossSalaryField" promptText="Gross Salary"/>
+    <TextField fx:id="overtimeHoursField" promptText="Overtime Hours"/>
+    <TextField fx:id="basicPayField" promptText="Basic Pay"/>
+    <TextField fx:id="medicalAllowanceField" promptText="Medical Allowance"/>
+    <TextField fx:id="perDayPayField" promptText="Per Day Pay"/>
+    <TextField fx:id="totalPayableField" promptText="Total Payable"/>
+    <TextField fx:id="houseRentField" promptText="House Rent"/>
+    <TextField fx:id="overtimePayField" promptText="Overtime Pay"/>
+    <TextField fx:id="perHourPayField" promptText="Per Hour Pay"/>
+    <Button text="Create Payroll" onAction="#createPayroll"/>
+    <Button text="Back" onAction="#goBack"/>
+  </children>
+</VBox>

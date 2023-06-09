@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.enterprise.payrollsystem.AddEmployeeController">
+  <padding>
+    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+  </padding>
+  <children>
+    <Label text="Add Employee"/>
+    <TextField fx:id="idField" promptText="Employee ID"/>
+    <TextField fx:id="nameField" promptText="Employee Name"/>
+    <TextField fx:id="positionField" promptText="Position"/>
+    <Button text="Add Employee" onAction="#addEmployee"/>
+    <Button text="Back" onAction="#goBack"/>
+  </children>
+</VBox>

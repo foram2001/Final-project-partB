@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane prefHeight="488.0" prefWidth="1006.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.enterprise.payrollsystem.ListPayrollsController">
+     <Button layoutX="483.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" text="Back" GridPane.rowIndex="12" />
+    <TableView fx:id="payrollTableView" layoutX="18.0" layoutY="45.0" prefHeight="429.0" prefWidth="970.0">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" />
+            <TableColumn fx:id="employeeIdColumn" text="Employee ID" />
+            <TableColumn fx:id="grossSalaryColumn" text="Gross Salary" />
+            <TableColumn fx:id="overtimeHoursColumn" text="Overtime Hours" />
+            <TableColumn fx:id="basicPayColumn" text="Basic Pay" />
+            <TableColumn fx:id="medicalAllowanceColumn" text="Medical Allowance" />
+            <TableColumn fx:id="perDayPayColumn" text="Per Day Pay" />
+            <TableColumn fx:id="totalPayableColumn" text="Total Payable" />
+            <TableColumn fx:id="houseRentColumn" text="House Rent" />
+            <TableColumn fx:id="overtimePayColumn" text="Overtime Pay" />
+            <TableColumn fx:id="perHourPayColumn" text="Per Hour Pay" />
+            <TableColumn fx:id="dateColumn" text="Date" />
+        </columns>
+    </TableView>
+</AnchorPane>
